@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+   <link href="./dist/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TravelNow | About page</title>
+    <style>
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .logo-bounce {
+            animation: bounce 2s infinite ease-in-out;
+        }
+        
+        /* Custom list styling */
+        .custom-list li::before {
+            content: "✓";
+            color: #0f766e;
+            font-weight: bold;
+            padding-right: 1rem;
+        }
+    </style>
+</head>
+<body class="font-sans leading-relaxed">
+    <!-- Navigation -->
+    <nav class="bg-teal-700 pt-5 p-10">
+        <div class="max-w-6xl w-3/4 mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-gray-100 text-2xl font-medium mb-4 md:mb-0">
+                <a href="./index.html" class="flex items-center gap-2 text-gray-100 hover:text-gray-100 no-underline">
+                    <span class="text-3xl logo-bounce">✈️</span> 
+                    <span class="tracking-wide">TravelNow</span>
+                </a>
+            </h1>
+             <ul class="flex flex-row space-x-4 sm:space-x-6 md:space-x-6 text-center">
+                    <li><a href="./index.html" class="text-gray-100 text-xs sm:text-sm md:text-base uppercase tracking-wide hover:border-b hover:border-white pb-1 transition-all">HOME</a></li>
+                    <li><a href="./about.html" class="text-gray-100 text-xs sm:text-sm md:text-base uppercase tracking-wide hover:border-b hover:border-white pb-1 transition-all">ABOUT</a></li>
+                    <li><a href="./contact.html" class="text-gray-100 text-xs sm:text-sm md:text-base uppercase tracking-wide hover:border-b hover:border-white pb-1 transition-all">CONTACT</a></li>
+                </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="py-8 sm:py-10">
+  <div class="max-w-6xl w-11/12 sm:w-3/4 mx-auto">
+    <!-- Heading -->
+    <h2 class="text-gray-800 text-2xl sm:text-3xl md:text-4xl font-medium mb-2 tracking-wide">About Us</h2>
+    <div class="border-b-4 border-teal-700 w-full mb-6 sm:mb-8"></div>
+    
+    <p class="text-gray-600 mb-6 sm:mb-8 text-justify text-sm sm:text-base tracking-wide">
+      At <b>Travel Now</b>, we specialize in creating seamless, affordable, and memorable travel experiences. From planning to arrival, we're with you every step of the way. Our services include:
+    </p>
+    
+    <!-- About Wrapper -->
+    <div class="flex flex-col lg:flex-row gap-6 sm:gap-8 text-justify mb-6 sm:mb-8">
+      <div class="w-full lg:w-1/2 lg:pr-6">
+        <ul class="custom-list space-y-3 sm:space-y-4">
+          <li class="text-gray-600 tracking-wide leading-relaxed text-sm sm:text-base">We specialize in creating personalized travel experiences.</li>
+          <li class="text-gray-600 tracking-wide leading-relaxed text-sm sm:text-base">Over 10 years of expertise in the tourism industry.</li>
+          <li class="text-gray-600 tracking-wide leading-relaxed text-sm sm:text-base">Offering guided tours to the world's most stunning destinations.</li>
+        </ul>
+      </div>
+
+      <div class="w-full lg:w-1/2">
+        <ul class="custom-list space-y-3 sm:space-y-4">
+          <li class="text-gray-600 tracking-wide leading-relaxed text-sm sm:text-base">Our team is available 24/7 for support during your journey.</li>
+          <li class="text-gray-600 tracking-wide leading-relaxed text-sm sm:text-base">Trusted by thousands of happy travelers worldwide.</li>
+          <li class="text-gray-600 tracking-wide leading-relaxed text-sm sm:text-base">Committed to responsible and eco-friendly tourism.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Counts -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4 sm:mb-6 text-center">
+      <div class="p-2 sm:p-4">
+        <span class="text-2xl sm:text-3xl font-bold text-teal-700 block">2500+</span>
+        <p class="font-bold text-gray-600 text-base sm:text-lg">Travelled</p>
+      </div>
+      <div class="p-2 sm:p-4">
+        <span class="text-2xl sm:text-3xl font-bold text-teal-700 block">500+</span>
+        <p class="font-bold text-gray-600 text-base sm:text-lg">Places</p>
+      </div>
+      <div class="p-2 sm:p-4">
+        <span class="text-2xl sm:text-3xl font-bold text-teal-700 block">2500+</span>
+        <p class="font-bold text-gray-600 text-base sm:text-lg">Guide</p>
+      </div>
+      <div class="p-2 sm:p-4">
+        <span class="text-2xl sm:text-3xl font-bold text-teal-700 block">50+</span>
+        <p class="font-bold text-gray-600 text-base sm:text-lg">Support</p>
+      </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="bg-teal-700 text-gray-100 p-4 sm:p-5 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="w-full sm:w-3/5 text-center sm:text-left">
+        <p class="font-bold text-lg sm:text-xl">What are you waiting for, reach us right now</p>
+      </div>
+      <div class="w-full sm:w-2/5 text-center">
+        <a href="./contact.html" class="inline-block font-bold text-lg sm:text-xl uppercase border-4 border-white px-6 py-2 sm:px-8 sm:py-3 text-gray-100 hover:bg-white hover:text-teal-700 transition-all tracking-widest">
+          Contact US
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer
+    <footer class="bg-teal-700 text-gray-100 text-center  pt-5 p-10">
+        <div class="social-media-links mb-4">
+            <i class="fa-brands fa-facebook text-2xl px-8 hover:text-gray-300 cursor-pointer"></i>
+            <i class="fa-brands fa-instagram text-2xl px-8 hover:text-gray-300 cursor-pointer"></i>
+            <i class="fa-brands fa-twitter text-2xl px-8 hover:text-gray-300 cursor-pointer"></i>
+        </div>
+        <p class="tracking-wide">World Travel &copy; 2020 All Rights Reserved</p>
+    </footer>
+</body>
+</html> -->
